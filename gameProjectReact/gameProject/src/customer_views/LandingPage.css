@@ -1,0 +1,68 @@
+
+.landing-page {
+  min-height: 100vh;
+  background: url("./asset/homepage01.png") repeat-y center center;
+  background-size: cover;
+  position: relative;
+  animation: scrollBackground 20s linear infinite;
+}
+
+
+@keyframes scrollBackground {
+  0% {
+    background-position: center top;
+  }
+  100% {
+    background-position: center bottom;
+  }
+}
+
+  
+  .hero-section {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  }
+  
+  .brand-title {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .hero-section .btn-primary {
+    background-color: #ff5722;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .hero-section .btn-primary:hover {
+    background-color: #e64a19;
+    transform: scale(1.1);
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ff5722;
+  }
+
+  .hero-section .container {
+    max-width: 700px;
+  }
+  
